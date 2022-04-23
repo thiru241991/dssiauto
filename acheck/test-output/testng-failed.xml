@@ -5,8 +5,7 @@
     <classes>
       <class name="scenarioexecution.ACDdashboard">
         <methods>
-          <include name="startTest"/>
-          <include name="searchCurrentDate"/>
+          <include name="fileStatusMouseHover"/>
         </methods>
       </class> <!-- scenarioexecution.ACDdashboard -->
     </classes>
