@@ -5,7 +5,7 @@
     <classes>
       <class name="scenarioexecution.ACDdashboard">
         <methods>
-          <include name="fileStatusMouseHover"/>
+          <include name="ExpiredCount"/>
         </methods>
       </class> <!-- scenarioexecution.ACDdashboard -->
     </classes>

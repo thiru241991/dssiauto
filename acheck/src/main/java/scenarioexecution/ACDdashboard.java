@@ -17,6 +17,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -156,7 +157,7 @@ public class ACDdashboard {
 
 	}
 
-	@Test(priority = 5)
+	//@Test(priority = 5)
 	public void dashboardGridReset() throws InterruptedException, MalformedURLException {
 		// driver.quit();
 		Thread.sleep(3000);
@@ -449,9 +450,9 @@ public class ACDdashboard {
 				ExpectedConditions.presenceOfAllElementsLocatedBy((By.xpath("//*[contains(@id,'cmdTabFileList')]"))));
 	}
 
-	@Test(priority = 12)
+	//@Test(priority = 12)
 	public void MyacheckSentVerify() throws MalformedURLException, InterruptedException {
-		 driver.close();
+		 //driver.close();
 		Thread.sleep(2000);
 		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 		driver = new ChromeDriver();
@@ -468,8 +469,9 @@ public class ACDdashboard {
 		Thread.sleep(1500);
 		WebElement drpdStatus = driver.findElement(By.xpath("//*[@id='invitationStatusDDL_listbox']/li[2]"));
 		drpdStatus.click();
-		drpdStatus.sendKeys(Keys.TAB);
-		Thread.sleep(5000);
+		Thread.sleep(4000);
+		//drpdStatus.sendKeys(Keys.TAB);
+		Thread.sleep(8000);
 		try {
 			WebElement GridDrpd = driver
 					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]/span/span/span[2]"));
@@ -496,11 +498,263 @@ public class ACDdashboard {
 		} catch (Exception e) {
 		}
 		Thread.sleep(7000);
-		WebElement Expiredfiles = driver.findElement(By.xpath("//td[7][contains(text(),'Expired')]"));
+		////WebElement Expiredfiles = driver.findElement(By.xpath("//td[7][contains(text(),'Expired')]"));
 		// WebDriverWait wait = new WebDriverWait(driver, 10);
 		// wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy((By.xpath("//td[7][contains(text(),'Expired')]"))
 		// ));
-		Assert.assertFalse(Expiredfiles.isDisplayed(), "Failure message");
+		////Assert.assertFalse(Expiredfiles.isDisplayed(), "Failure message");
+		Boolean notPresent = ExpectedConditions.not(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[7][contains(text(),'Expired')]"))).apply(driver);
+		  Assert.assertTrue(notPresent,"Failure message");
 
+	}
+	//@Test(priority = 13)
+	public void MyacheckInProgressVerify() throws MalformedURLException, InterruptedException {
+		 driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//span[contains(text(),'My A-Check Invites')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[1]/div[1]/span/span/span[2]")).click();
+		Thread.sleep(1500);
+		WebElement drpdStatus = driver.findElement(By.xpath("//*[@id='invitationStatusDDL_listbox']/li[3]"));
+		drpdStatus.click();
+		Thread.sleep(4000);
+		//drpdStatus.sendKeys(Keys.TAB);
+		Thread.sleep(8000);
+		try {
+			WebElement GridDrpd = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]/span/span/span[2]"));
+			GridDrpd.click();
+		} catch (Exception e) {
+		}
+		try {
+			WebElement GridDrpd2 = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]/span/span/span[2]"));
+			GridDrpd2.click();
+		} catch (Exception e) {
+		}
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'100')]")).click();
+		Thread.sleep(18000);
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		Thread.sleep(7000);
+		
+				  Boolean notPresent = ExpectedConditions.not(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[7][contains(text(),'Expired')]"))).apply(driver);
+				  Assert.assertTrue(notPresent,"Failure message");
+				  
+		}
+	
+	//@Test(priority = 14)
+	public void MyacheckApplicantLoggedInVerify() throws MalformedURLException, InterruptedException {
+		 driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//span[contains(text(),'My A-Check Invites')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[1]/div[1]/span/span/span[2]")).click();
+		Thread.sleep(1500);
+		WebElement drpdStatus = driver.findElement(By.xpath("//*[@id='invitationStatusDDL_listbox']/li[7]"));
+		drpdStatus.click();
+		Thread.sleep(4000);
+		//drpdStatus.sendKeys(Keys.TAB);
+		Thread.sleep(8000);
+		try {
+			WebElement GridDrpd = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]/span/span/span[2]"));
+			GridDrpd.click();
+		} catch (Exception e) {
+		}
+		try {
+			WebElement GridDrpd2 = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]/span/span/span[2]"));
+			GridDrpd2.click();
+		} catch (Exception e) {
+		}
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'100')]")).click();
+		Thread.sleep(18000);
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		Thread.sleep(7000);
+		
+				  Boolean notPresent = ExpectedConditions.not(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[7][contains(text(),'Expired')]"))).apply(driver);
+				  Assert.assertTrue(notPresent,"Failure message");
+				  
+		}
+	
+	//@Test(priority = 15)
+	public void MyacheckApplicantLockedOutVerify() throws MalformedURLException, InterruptedException {
+		 driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//span[contains(text(),'My A-Check Invites')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[1]/div[1]/span/span/span[2]")).click();
+		Thread.sleep(1500);
+		WebElement drpdStatus = driver.findElement(By.xpath("//*[@id='invitationStatusDDL_listbox']/li[8]"));
+		drpdStatus.click();
+		Thread.sleep(4000);
+		//drpdStatus.sendKeys(Keys.TAB);
+		Thread.sleep(8000);
+		try {
+			WebElement GridDrpd = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]/span/span/span[2]"));
+			GridDrpd.click();
+		} catch (Exception e) {
+		}
+		try {
+			WebElement GridDrpd2 = driver
+					.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]/span/span/span[2]"));
+			GridDrpd2.click();
+		} catch (Exception e) {
+		}
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//li[contains(text(),'100')]")).click();
+		Thread.sleep(18000);
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[5]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		try {
+			WebElement end = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[4]/span[1]"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", end);
+		} catch (Exception e) {
+		}
+		Thread.sleep(7000);
+		
+				  //Boolean notPresent = ExpectedConditions.not(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//td[7][contains(text(),'Expired')]"))).apply(driver);
+				  //Assert.assertTrue(notPresent,"Failure message");
+				  WebElement fileno = driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[3]/table/tbody/tr[1]/td[2]/a"));
+					((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", fileno);
+					Thread.sleep(7000);
+					fileno.click();
+				  
+		}
+	
+	//@Test(priority = 16)
+	public void SearchTextBox () throws MalformedURLException, InterruptedException {
+		 //driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		WebElement SearchBox= driver.findElement(By.xpath("//*[@id='backgroundReportDetailGridSearch']"));
+		SearchBox.sendKeys("zxzxz");
+		driver.findElement(By.xpath("//*[@id='backgroundReportDetailGridRefresh']")).click();
+		Thread.sleep(10000);
+		SearchBox.clear();
+		SearchBox.sendKeys(Keys.TAB);
+		Thread.sleep(10000);
+		 WebElement fileno = driver.findElement(By.xpath("//*[@id='backgroundReportDetailGrid']/div[3]/table/tbody/tr[1]/td[4]/a"));
+			((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", fileno);
+			Thread.sleep(7000);
+			fileno.click();
+	}
+	
+	@Test(priority = 17)
+	public void ExpiredCount() throws MalformedURLException, InterruptedException {
+		 //driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//*[@id='backgroundReportDetailGrid']/div[1]/div[1]/span/span/span[2]")).click();
+		Thread.sleep(1500);
+		driver.findElement(By.xpath("//*[@id='backgroundReportStatusDDL_listbox']/li[5]")).click();
+		Thread.sleep(13000);
+		String ExpCount1= driver.findElement(By.xpath("//*[@id='invitationSummaryGrid']/div[3]/table/tbody/tr[6]/td[2]")).getText();
+		System.out.println(ExpCount1);
+		String ExpCount2= driver.findElement(By.xpath("//*[@id='backgroundReportDetailGrid']//span[contains(text(),'1 -')]")).getText();
+		WebElement ExpCount3= driver.findElement(By.xpath("//*[@id='backgroundReportDetailGrid']//span[contains(text(),'1 -')]"));
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", ExpCount3);
+		Thread.sleep(7000);
+		
+		Assert.assertTrue(ExpCount2.contains(ExpCount1), "Failure message");
+		
+		
+	}
+	
+	@Test(priority = 18)
+	public void MyacheckCancelVerify() throws MalformedURLException, InterruptedException {
+		 driver.close();
+		Thread.sleep(2000);
+		System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.navigate().to(new URL("https://devdirect.acheckamerica.com/Acheckdirect20/"));
+		driver.findElement(By.id("Username")).sendKeys("tester1");
+		driver.findElement(By.id("Password")).sendKeys("Tester1@");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//*[@id='loginForm']/form/div[3]/div/input")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//span[contains(text(),'My A-Check Invites')]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//*[@id='invitationDetailGrid']/div[1]/div[1]/span/span/span[2]")).click();
+		Thread.sleep(1500);
+		WebElement drpdStatus = driver.findElement(By.xpath("//*[@id='invitationStatusDDL_listbox']/li[6]"));
+		drpdStatus.click();
+		Thread.sleep(12000);
+		driver.findElement(By.xpath("//div[@id='invitationDetailGrid']//div[@class='k-grid-content k-auto-scrollable']//*[@class='k-checkbox']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//a[contains(text(),'Cancel')]")).click();
+		Thread.sleep(16000);
+		driver.findElement(By.xpath("//*[contains(@id,'alertDialog')]/following::button")).click();
+		Thread.sleep(5000);
+		
+	
 	}
 }
