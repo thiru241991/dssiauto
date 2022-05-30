@@ -3,21 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="acd.TestScript">
+      <class name="scenarioExecution.ACDScenarioExecution">
         <methods>
-          <include name="FileInfo" invocation-numbers="0"/>
-          <include name="Actions" invocation-numbers="0"/>
-          <include name="SearchRequest"/>
-          <include name="closeBrowser"/>
-          <include name="OfflineReports"/>
-          <include name="startTest"/>
-          <include name="addReport" invocation-numbers="0"/>
-          <include name="basicDetail" invocation-numbers="0"/>
-          <include name="ACDQuicklinks"/>
-          <include name="FileAdjud_FCRA"/>
-          <include name="docUpload" invocation-numbers="0"/>
+          <include name="myAcheckBulkInvite"/>
+          <include name="setUp"/>
+          <include name="myAcheckCreateInvite" invocation-numbers="0"/>
+          <include name="ACDscript" invocation-numbers="0"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- acd.TestScript -->
+      </class> <!-- scenarioExecution.ACDScenarioExecution -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
