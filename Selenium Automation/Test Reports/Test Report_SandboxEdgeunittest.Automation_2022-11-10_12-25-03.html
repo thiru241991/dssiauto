@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-10 12:25:03</p>
+                <p class='attribute'><strong>Duration: </strong>6046.99 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 11, Pass: 4, Error: 7</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SandboxEdgeunittest.Automation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_001_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_002_AddProduct</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>STANDARD
+MULTI-USE
+SINGLE-USE
+BUDGETARY
+add product time=28.012798309326172
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_003_AddingSimpleproduct</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <button id="BTN_add_quote" class="btn-list-cust" onclick="addingQuote()" style="pointer-events: all; color: rgb(73, 133, 231); display: block !important;">...</button> is not clickable at point (1178, 202). Other element would receive the click: <div class="overlay" style="display: block; opacity: 0.2;">...</div>
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF83D13+933139]
+	Ordinal0 [0x00007FF73BF81379+922489]
+	Ordinal0 [0x00007FF73BF7E7A9+911273]
+	Ordinal0 [0x00007FF73BF7CFAC+905132]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 142, in test_003_AddingSimpleproduct
+    addsimpleproduct = driver.find_element(By.XPATH,'(//button[@id="BTN_add_quote"])[3]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button id="BTN_add_quote" class="btn-list-cust" onclick="addingQuote()" style="pointer-events: all; color: rgb(73, 133, 231); display: block !important;">...</button> is not clickable at point (1178, 202). Other element would receive the click: <div class="overlay" style="display: block; opacity: 0.2;">...</div>
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF83D13+933139]
+	Ordinal0 [0x00007FF73BF81379+922489]
+	Ordinal0 [0x00007FF73BF7E7A9+911273]
+	Ordinal0 [0x00007FF73BF7CFAC+905132]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_004_ConfigurePrdSave</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 156, in test_004_ConfigurePrdSave
+    addconfigproduct = driver.find_element(By.XPATH,'//*[@id="addproducts"]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_005_BulkAddPrd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF400CB+655563]
+	Ordinal0 [0x00007FF73BF3FE4C+654924]
+	Ordinal0 [0x00007FF73BF40200+655872]
+	Ordinal0 [0x00007FF73BF7C6F9+902905]
+	Ordinal0 [0x00007FF73BF83B1E+932638]
+	Ordinal0 [0x00007FF73BF81379+922489]
+	Ordinal0 [0x00007FF73BF7E7A9+911273]
+	Ordinal0 [0x00007FF73BF7CFAC+905132]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 203, in test_005_BulkAddPrd
+    bulkaddbtn = driver.find_element(By.XPATH,'//button[@id="bulkaddprd"]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF400CB+655563]
+	Ordinal0 [0x00007FF73BF3FE4C+654924]
+	Ordinal0 [0x00007FF73BF40200+655872]
+	Ordinal0 [0x00007FF73BF7C6F9+902905]
+	Ordinal0 [0x00007FF73BF83B1E+932638]
+	Ordinal0 [0x00007FF73BF81379+922489]
+	Ordinal0 [0x00007FF73BF7E7A9+911273]
+	Ordinal0 [0x00007FF73BF7CFAC+905132]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_006_ApplyingBulkDiscount</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 238, in test_006_ApplyingBulkDiscount
+    discpercent.click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_007_SelfApprovingQuote</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>152,196.37 USD
+</p><p style="color:maroon;">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF400CB+655563]
+	Ordinal0 [0x00007FF73BF3FE4C+654924]
+	Ordinal0 [0x00007FF73BF40200+655872]
+	Ordinal0 [0x00007FF73BF7C6F9+902905]
+	Ordinal0 [0x00007FF73BF7DE0E+908814]
+	Ordinal0 [0x00007FF73BFB2E85+1126021]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 281, in test_007_SelfApprovingQuote
+    driver.switch_to.frame(approvaliframe)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\switch_to.py", line 94, in frame
+    self._driver.execute(Command.SWITCH_TO_FRAME, {'id': frame_reference})
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF400CB+655563]
+	Ordinal0 [0x00007FF73BF3FE4C+654924]
+	Ordinal0 [0x00007FF73BF40200+655872]
+	Ordinal0 [0x00007FF73BF7C6F9+902905]
+	Ordinal0 [0x00007FF73BF7DE0E+908814]
+	Ordinal0 [0x00007FF73BFB2E85+1126021]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_008_CreatingRFO</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>clicked orders node
+</p><p style="color:maroon;">TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF7B6B7+898743]
+	Ordinal0 [0x00007FF73BF7BAAC+899756]
+	Ordinal0 [0x00007FF73BFB3DD7+1129943]
+	Ordinal0 [0x00007FF73BF9891F+1018143]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 324, in test_008_CreatingRFO
+    WebDriverWait(driver, 3600).until(EC.visibility_of_element_located((By.XPATH, '//button[text()="CREATE RFO"]')))
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\wait.py", line 90, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C8A5+641189]
+	Ordinal0 [0x00007FF73BF7B6B7+898743]
+	Ordinal0 [0x00007FF73BF7BAAC+899756]
+	Ordinal0 [0x00007FF73BFB3DD7+1129943]
+	Ordinal0 [0x00007FF73BF9891F+1018143]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_009_CreatingNewRevision</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>New Revision time=64.72017908096313
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_010_BulkDeletingProducts</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 393, in test_010_BulkDeletingProducts
+    prdpagination = driver.find_element(By.XPATH,'//div[@id="itemsPerPageDropdown"]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF73C37F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C31C7E2+1461602]
+	Ordinal0 [0x00007FF73BF3C757+640855]
+	Ordinal0 [0x00007FF73BF7CD13+904467]
+	Ordinal0 [0x00007FF73BF6F7D5+849877]
+	Ordinal0 [0x00007FF73BF988DA+1018074]
+	Ordinal0 [0x00007FF73BF6EF14+847636]
+	Ordinal0 [0x00007FF73BF98BD0+1018832]
+	Ordinal0 [0x00007FF73BFB11F9+1118713]
+	Ordinal0 [0x00007FF73BF986F3+1017587]
+	Ordinal0 [0x00007FF73BF6D104+839940]
+	Ordinal0 [0x00007FF73BF6E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1D8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C1C57CC+56652]
+	Ordinal0 [0x00007FF73C02A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C321D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C325D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF73C32D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_011_UpdatingExcel</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 11, Pass: 4, Error: 7 -- Duration: 6046.99 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

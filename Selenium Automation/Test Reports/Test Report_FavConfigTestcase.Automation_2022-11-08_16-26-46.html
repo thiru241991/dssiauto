@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-08 16:26:46</p>
+                <p class='attribute'><strong>Duration: </strong>14.58 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 0, Error: 4</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>FavConfigTestcase.Automation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_001_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable: https://sandbox.webcomcpq.com/QUOTATION/LOADQUOTE.ASPX?Tab=1#AllQuotes has no size and location
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A0300CB+655563]
+	Ordinal0 [0x00007FF71A02FE4C+654924]
+	Ordinal0 [0x00007FF71A030200+655872]
+	Ordinal0 [0x00007FF71A072E3F+929343]
+	Ordinal0 [0x00007FF71A072129+925993]
+	Ordinal0 [0x00007FF71A0ADAE9+1170153]
+	Ordinal0 [0x00007FF71A0888DA+1018074]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 55, in test_001_login
+    ActionChains(self.driver).move_to_element(allquotes).click(allquotes).perform()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\common\action_chains.py", line 78, in perform
+    self.w3c_actions.perform()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\common\actions\action_builder.py", line 88, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable: https://sandbox.webcomcpq.com/QUOTATION/LOADQUOTE.ASPX?Tab=1#AllQuotes has no size and location
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A0300CB+655563]
+	Ordinal0 [0x00007FF71A02FE4C+654924]
+	Ordinal0 [0x00007FF71A030200+655872]
+	Ordinal0 [0x00007FF71A072E3F+929343]
+	Ordinal0 [0x00007FF71A072129+925993]
+	Ordinal0 [0x00007FF71A0ADAE9+1170153]
+	Ordinal0 [0x00007FF71A0888DA+1018074]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_002_addincompleteProd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 94, in test_002_addincompleteProd
+    addprod()
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 83, in addprod
+    addproduct = driver.find_element(By.XPATH,'//*[@id="addproducts"]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_003_addCompleteProd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 106, in test_003_addCompleteProd
+    addproduct = driver.find_element(By.XPATH,'//*[@id="addproducts"]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_004_SavingProdFromFav</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 158, in test_004_SavingProdFromFav
+    addproduct3 = driver.find_element(By.XPATH,'//*[@id="addproducts"]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="addproducts"]"}
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF71A46F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A40C7E2+1461602]
+	Ordinal0 [0x00007FF71A02C8A5+641189]
+	Ordinal0 [0x00007FF71A06B6B7+898743]
+	Ordinal0 [0x00007FF71A06BAAC+899756]
+	Ordinal0 [0x00007FF71A0A3DD7+1129943]
+	Ordinal0 [0x00007FF71A08891F+1018143]
+	Ordinal0 [0x00007FF71A0A11F9+1118713]
+	Ordinal0 [0x00007FF71A0886F3+1017587]
+	Ordinal0 [0x00007FF71A05D104+839940]
+	Ordinal0 [0x00007FF71A05E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2C8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A2B57CC+56652]
+	Ordinal0 [0x00007FF71A11A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A411D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A415D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF71A41D626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 0, Error: 4 -- Duration: 14.58 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

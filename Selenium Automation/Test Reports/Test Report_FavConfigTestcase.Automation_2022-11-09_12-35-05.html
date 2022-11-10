@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-09 12:35:05</p>
+                <p class='attribute'><strong>Duration: </strong>119.91 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 4, Pass: 1, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>FavConfigTestcase.Automation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_001_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_002_addincompleteProd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementClickInterceptedException: Message: element click intercepted: Element <a onclick="Addconfig(this)">...</a> is not clickable at point (738, 347). Other element would receive the click: <div class="overlay" style="opacity: 0.2; display: block;">...</div>
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA823D13+933139]
+	Ordinal0 [0x00007FF7CA821379+922489]
+	Ordinal0 [0x00007FF7CA81E7A9+911273]
+	Ordinal0 [0x00007FF7CA81CFAC+905132]
+	Ordinal0 [0x00007FF7CA80F7D5+849877]
+	Ordinal0 [0x00007FF7CA8388DA+1018074]
+	Ordinal0 [0x00007FF7CA80EF14+847636]
+	Ordinal0 [0x00007FF7CA838BD0+1018832]
+	Ordinal0 [0x00007FF7CA8511F9+1118713]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 87, in test_002_addincompleteProd
+    partnoclick1 = driver.find_element(By.XPATH,'//a[contains(text(),"G4513A")]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 88, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webelement.py", line 396, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a onclick="Addconfig(this)">...</a> is not clickable at point (738, 347). Other element would receive the click: <div class="overlay" style="opacity: 0.2; display: block;">...</div>
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA823D13+933139]
+	Ordinal0 [0x00007FF7CA821379+922489]
+	Ordinal0 [0x00007FF7CA81E7A9+911273]
+	Ordinal0 [0x00007FF7CA81CFAC+905132]
+	Ordinal0 [0x00007FF7CA80F7D5+849877]
+	Ordinal0 [0x00007FF7CA8388DA+1018074]
+	Ordinal0 [0x00007FF7CA80EF14+847636]
+	Ordinal0 [0x00007FF7CA838BD0+1018832]
+	Ordinal0 [0x00007FF7CA8511F9+1118713]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_003_addCompleteProd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA7BB16B+504171]
+	Ordinal0 [0x00007FF7CA83BF9C+1032092]
+	Ordinal0 [0x00007FF7CA850752+1115986]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 114, in test_003_addCompleteProd
+    WebDriverWait(driver, 3600).until(EC.element_to_be_clickable((By.XPATH, '(//span[contains(text(),"G4513A")])[1]')))
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\expected_conditions.py", line 312, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA7BB16B+504171]
+	Ordinal0 [0x00007FF7CA83BF9C+1032092]
+	Ordinal0 [0x00007FF7CA850752+1115986]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_004_SavingProdFromFav</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA7BB16B+504171]
+	Ordinal0 [0x00007FF7CA83BF9C+1032092]
+	Ordinal0 [0x00007FF7CA850752+1115986]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\FavConfigTestcase.py", line 140, in test_004_SavingProdFromFav
+    addproduct3 = driver.find_element(By.XPATH,'//*[@id="addproducts"]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF7CAC1F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABBC7E2+1461602]
+	Ordinal0 [0x00007FF7CA7DC8A5+641189]
+	Ordinal0 [0x00007FF7CA7BB16B+504171]
+	Ordinal0 [0x00007FF7CA83BF9C+1032092]
+	Ordinal0 [0x00007FF7CA850752+1115986]
+	Ordinal0 [0x00007FF7CA8386F3+1017587]
+	Ordinal0 [0x00007FF7CA80D104+839940]
+	Ordinal0 [0x00007FF7CA80E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA78A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA62888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CAA657CC+56652]
+	Ordinal0 [0x00007FF7CA8CA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABC5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF7CABCD626+1530790]
+	BaseThreadInitThunk [0x00007FFEE7C154E0+16]
+	RtlUserThreadStart [0x00007FFEE88A485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 4, Pass: 1, Error: 3 -- Duration: 119.91 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

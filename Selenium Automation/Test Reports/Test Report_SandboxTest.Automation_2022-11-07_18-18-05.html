@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-11-07 18:18:05</p>
+                <p class='attribute'><strong>Duration: </strong>129.81 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 1, Error: 2</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SandboxTest.Automation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_001_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ElementNotInteractableException: Message: element not interactable: https://sandbox.webcomcpq.com/QUOTATION/LOADQUOTE.ASPX?Tab=1#AllQuotes has no size and location
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF620AAF0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A4C7E2+1461602]
+	Ordinal0 [0x00007FF62066C8A5+641189]
+	Ordinal0 [0x00007FF6206700CB+655563]
+	Ordinal0 [0x00007FF62066FE4C+654924]
+	Ordinal0 [0x00007FF620670200+655872]
+	Ordinal0 [0x00007FF6206B2E3F+929343]
+	Ordinal0 [0x00007FF6206B2129+925993]
+	Ordinal0 [0x00007FF6206EDAE9+1170153]
+	Ordinal0 [0x00007FF6206C88DA+1018074]
+	Ordinal0 [0x00007FF6206E11F9+1118713]
+	Ordinal0 [0x00007FF6206C86F3+1017587]
+	Ordinal0 [0x00007FF62069D104+839940]
+	Ordinal0 [0x00007FF62069E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620908A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6208F2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6208F57CC+56652]
+	Ordinal0 [0x00007FF62075A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A51D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A55C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A55D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A5D626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxTest.py", line 81, in test_001_login
+    ActionChains(self.driver).move_to_element(allquotes).click(allquotes).perform()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\common\action_chains.py", line 78, in perform
+    self.w3c_actions.perform()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\common\actions\action_builder.py", line 88, in perform
+    self.driver.execute(Command.W3C_ACTIONS, enc)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable: https://sandbox.webcomcpq.com/QUOTATION/LOADQUOTE.ASPX?Tab=1#AllQuotes has no size and location
+  (Session info: MicrosoftEdge=107.0.1418.35)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF620AAF0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A4C7E2+1461602]
+	Ordinal0 [0x00007FF62066C8A5+641189]
+	Ordinal0 [0x00007FF6206700CB+655563]
+	Ordinal0 [0x00007FF62066FE4C+654924]
+	Ordinal0 [0x00007FF620670200+655872]
+	Ordinal0 [0x00007FF6206B2E3F+929343]
+	Ordinal0 [0x00007FF6206B2129+925993]
+	Ordinal0 [0x00007FF6206EDAE9+1170153]
+	Ordinal0 [0x00007FF6206C88DA+1018074]
+	Ordinal0 [0x00007FF6206E11F9+1118713]
+	Ordinal0 [0x00007FF6206C86F3+1017587]
+	Ordinal0 [0x00007FF62069D104+839940]
+	Ordinal0 [0x00007FF62069E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620908A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6208F2888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6208F57CC+56652]
+	Ordinal0 [0x00007FF62075A764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A51D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A55C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A55D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF620A5D626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_002_AddProduct</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>5
+STANDARD
+MULTI-USE
+SINGLE-USE
+BUDGETARY
+5
+add product time=0
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_011_UpdatingExcel</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AttributeError: 'Automation' object has no attribute 'addproducttime'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxTest.py", line 426, in test_011_UpdatingExcel
+    self.sheet.cell(row=2,column=3).value = self.addproducttime
+AttributeError: 'Automation' object has no attribute 'addproducttime'
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 1, Error: 2 -- Duration: 129.81 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

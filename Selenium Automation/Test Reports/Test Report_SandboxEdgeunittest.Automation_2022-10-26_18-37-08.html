@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Automation Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-10-26 18:37:08</p>
+                <p class='attribute'><strong>Duration: </strong>460.86 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 10, Pass: 1, Error: 9</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>SandboxEdgeunittest.Automation</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_10_BulkDeletingProducts</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@src, "/mt/AGILENTTECHNOLOGIESINC_TST1/Additionalfiles/icons/product.svg")]"}
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7B4B6B7+898743]
+	Ordinal0 [0x00007FF6A7B4BAAC+899756]
+	Ordinal0 [0x00007FF6A7B83DD7+1129943]
+	Ordinal0 [0x00007FF6A7B6891F+1018143]
+	Ordinal0 [0x00007FF6A7B811F9+1118713]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 382, in test_10_BulkDeletingProducts
+    productsnode = driver.find_element(By.XPATH,'//*[contains(@src, "/mt/AGILENTTECHNOLOGIESINC_TST1/Additionalfiles/icons/product.svg")]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@src, "/mt/AGILENTTECHNOLOGIESINC_TST1/Additionalfiles/icons/product.svg")]"}
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7B4B6B7+898743]
+	Ordinal0 [0x00007FF6A7B4BAAC+899756]
+	Ordinal0 [0x00007FF6A7B83DD7+1129943]
+	Ordinal0 [0x00007FF6A7B6891F+1018143]
+	Ordinal0 [0x00007FF6A7B811F9+1118713]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_1_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_2_AddProduct</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>STANDARD
+MULTI-USE
+SINGLE-USE
+BUDGETARY
+</p><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 125, in test_2_AddProduct
+    simpleproductwait()
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 123, in simpleproductwait
+    WebDriverWait(self.driver,60000).until(EC.element_to_be_clickable((By.XPATH, '//*[@id="TH_ACTIONS"]/div[2]/button')))
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\expected_conditions.py", line 312, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_3_AddingSimpleproduct</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 136, in test_3_AddingSimpleproduct
+    simpleproduct = driver.find_element(By.XPATH,'(//label[text()="Configurable"]/following::input)[2]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_4_ConfigurePrdSave</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 155, in test_4_ConfigurePrdSave
+    addconfigproduct = driver.find_element(By.XPATH,'//*[@id="addproducts"]').click()
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_5_BulkAddPrd</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 201, in test_5_BulkAddPrd
+    self.bulkaddbtnwait()
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 32, in bulkaddbtnwait
+    self.pageloader()
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 27, in pageloader
+    WebDriverWait(self.driver, 3600).until(EC.invisibility_of_element_located((By.XPATH, '//*[contains(@id,"progressbar_disc")]')))
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\wait.py", line 81, in until
+    value = method(self._driver)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\support\expected_conditions.py", line 277, in _predicate
+    target = driver.find_element(*target)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_6_ApplyingBulkDiscount</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 224, in test_6_ApplyingBulkDiscount
+    discdropdown =  Select(driver.find_element(By.XPATH,'//div[@class="row prd_container"]//select[1]'))
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_7_SelfApprovingQuote</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 260, in test_7_SelfApprovingQuote
+    netvalue = driver.find_element(By.XPATH, '//abbr[@id="tot_quote_netValue"]').text
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_8_CreatingRFO</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 317, in test_8_CreatingRFO
+    ordersnode = driver.find_element(By.XPATH,'//img[contains(@src, "/mt/AGILENTTECHNOLOGIESINC_TST1/Additionalfiles/icons/order.svg")]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_9_CreatingNewRevision</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:\Users\thiruvenkhadan palan\Documents\Automation\Selenium Automation\SandboxEdgeunittest.py", line 362, in test_9_CreatingNewRevision
+    revisionsnode = driver.find_element(By.XPATH,'//*[contains(@src, "/mt/AGILENTTECHNOLOGIESINC_TST1/Additionalfiles/icons/Revisions_node.svg")]')
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 856, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\thiruvenkhadan palan\AppData\Roaming\Python\Python39\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: MicrosoftEdge=106.0.1370.52)
+Stacktrace:
+Backtrace:
+	Microsoft::Applications::Events::EventProperties::SetProperty [0x00007FF6A7F4F0E2+15282]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EEC7E2+1461602]
+	Ordinal0 [0x00007FF6A7B0C8A5+641189]
+	Ordinal0 [0x00007FF6A7AEB16B+504171]
+	Ordinal0 [0x00007FF6A7B6BF9C+1032092]
+	Ordinal0 [0x00007FF6A7B80752+1115986]
+	Ordinal0 [0x00007FF6A7B686F3+1017587]
+	Ordinal0 [0x00007FF6A7B3D104+839940]
+	Ordinal0 [0x00007FF6A7B3E76F+845679]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7DA8A28+135080]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D92888+44552]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7D957CC+56652]
+	Ordinal0 [0x00007FF6A7BFA764+1615716]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF1D49+1483465]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5C04+1499524]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EF5D5D+1499869]
+	Microsoft::Applications::Events::EventProperty::EventProperty [0x00007FF6A7EFD626+1530790]
+	BaseThreadInitThunk [0x00007FFBB45A54E0+16]
+	RtlUserThreadStart [0x00007FFBB5F0485B+43]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 10, Pass: 1, Error: 9 -- Duration: 460.86 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
